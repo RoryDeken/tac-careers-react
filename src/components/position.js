@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ApplyForm from './apply-form'
 
 const Position = () => {
 
@@ -8,12 +9,8 @@ const Position = () => {
   return (
     <><p>We are currently looking for a full-time Virtual Executive Assistant to join our team and support the founder and CEO of our company, Michelle Chalfant. 
 Michelle is a licensed therapist, holistic life coach, author, speaker, podcaster and developer of The Adult Chair, a transformational model of self-realization that helps people across the globe discover who they are, become unstuck, improve their relationships and develop self-love.
-If you are a highly organized administrative professional with experience supporting C-Level Executives, read on to learn more about this exciting opportunity!  <button class="read-more-toggle" onClick={() => setToggle(!toggle)}>Read more</button></p>
+If you are a highly organized administrative professional with experience supporting C-Level Executives, read on to learn more about this exciting opportunity!  <button class="read-more-toggle" onClick={() => setToggle(!toggle)}>{toggle ? 'Read more' : 'Read less'}</button></p>
           {!toggle && ( <div class="read-more">
-<h4>MISSION:</h4> 
-<p>The mission of the Virtual Executive Assistant is to stay five steps ahead of their leader, tracking all of the administrative details, and clearing the path for her to make his greatest contribution to our business. The Virtual Executive Assistant will be a key asset to the CEO by anticipating needs at an exceptionally high level, allowing her to develop vision and strategy for all aspects of business at The Michelle Chalfant Company so that we can reach our revenue and profitability goals. 
-While repetitive tasks are certainly part of this position, the tasks assigned can vary from week to week based on the CEO’s needs and the needs of business. The most important responsibility of the Virtual Executive Assistant is to ensure that administrative tasks and projects are completed with a high level of efficiency, confidentiality, accuracy, flexibility, and positivity in order to support the initiatives of the CEO.</p>
-
 <h4>PROFICIENCIES:</h4>
 <p>Quality communication: Our EA must be an excellent communicator, in both written and oral form and come across clear, concise and professional. This includes proficiency in spelling, grammar, and punctuation. This also includes being able to take a large amount of information and summarize it quickly both in writing and orally on a regular basis. You must also be able to track communication (and be very responsive) across multiple channels without losing any details. Those channels could include in-person meetings, virtual video calls, Slack messages, text messages and/or emails.
 Affinity for technology: Our EA will be a technologically savvy Mac user and will not be intimidated by learning new technology. Proficiency in the following tech platforms is ideal: Google Suite, Slack, Zoom, YouTube, Adobe Acrobat, Project Management Software (Monday.com, Asana, etc.), CRMs/email platforms (Keap, ActiveCampaign or similar) and course platforms (Kajabi, Teachable, Mighty Networks, Coach Accountable, etc.)
@@ -92,7 +89,14 @@ Full-time, Salaried (with killer benefits!)</p>
 <p>Equal Opportunity Employer.</p>
 
 <h4>APPLICATION INSTRUCTIONS:</h4>
-<p>To apply, please submit a cover letter and PDF of your resume to <a href="mailto:careers@michellechalfant.com">careers@michellechalfant.com</a> and bold the email address.</p>
+<p>To apply:</p>
+<ul>
+  <li>Please submit a cover letter and PDF of your resume</li>
+  <li>StrengthsFinder Top-5 Strengths Report (optional)</li>
+  <li>Kolbe A Index Assessment (optional)</li>
+</ul>
+<ApplyForm/>
+<button class="read-more-toggle" onClick={() => setToggle(!toggle)}>{toggle ? 'Read more' : 'Read less'}</button>
 </div>)}</>
   )
 }

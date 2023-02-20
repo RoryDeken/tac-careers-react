@@ -3,6 +3,7 @@ import Menu from './components/menu';
 import Footer from './components/footer';
 import Position from './components/position';
 import {Chair, Michelle, Location, Job} from './assets/img'
+import SubForm from './components/sub-form';
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
            <div class="col text-center pt-5">
             <h2>Where your passion, purpose and skills collide.</h2>
             <h3>Help bring healing and transformation to the world.</h3>
-            <a class="btn btn-primary mt-5" href="/#openings">Search Current Job Openings</a>
+            <a class="btn btn-primary mt-5" href="#openings">Search Current Job Openings</a>
             </div>
             </div>
            </div>
@@ -33,12 +34,12 @@ function App() {
           <h4 class="small-heading">We do this through:</h4>
           <div class="methods">
             <ul>
-              <li><span><img src="https://theadultchair.com/careers-new/icons/microphone.png" alt=""/></span> <p>Top-Ranked Podcast</p></li>
-              <li><span><img src="https://theadultchair.com/careers-new/icons/files.png" alt=""/></span> <p>Empowering Free Resources</p></li>
-              <li><span><img src="https://theadultchair.com/careers-new/icons/event.png" alt=""/></span> <p>Transformational Live Events</p></li>
-              <li><span><img src="https://theadultchair.com/careers-new/icons/certificate.png" alt=""/></span> <p>Globally-Recognized Coaching Certification Programs</p></li>
-              <li><span><img src="https://theadultchair.com/careers-new/icons/hat.png" alt=""/></span> <p>In-Depth Online Courses</p></li>
-              <li><span><img src="https://theadultchair.com/careers-new/icons/coaching.png" alt=""/></span> <p>One-on-One Coaching</p></li>
+              <li><span><img src="https://michellechalfant.com/careers/icons/microphone.png" alt=""/></span> <p>Top-Ranked Podcast</p></li>
+              <li><span><img src="https://michellechalfant.com/careers/icons/files.png" alt=""/></span> <p>Empowering Free Resources</p></li>
+              <li><span><img src="https://michellechalfant.com/careers/icons/event.png" alt=""/></span> <p>Transformational Live Events</p></li>
+              <li><span><img src="https://michellechalfant.com/careers/icons/certificate.png" alt=""/></span> <p>Globally-Recognized Coaching Certification Programs</p></li>
+              <li><span><img src="https://michellechalfant.com/careers/icons/hat.png" alt=""/></span> <p>In-Depth Online Courses</p></li>
+              <li><span><img src="https://michellechalfant.com/careers/icons/coaching.png" alt=""/></span> <p>One-on-One Coaching</p></li>
             </ul>
           </div>
 
@@ -63,9 +64,9 @@ function App() {
         <section class="movement-banner text-center container-fluid p-5">
         <h2 class="p-5">Working here is so much more than a job. It’s a movement. It’s changing lives worldwide. And we want you to join us!</h2>
         </section>
-        <section class="who-we-are text-center container p-5">
+        <section class="who-we-are text-center container p-5" style={{display:'none'}}>
           
-          <div class="leadership">
+          <div class="leadership" >
           <h2 class="small-heading">Who we are</h2>
             <h3 class="leadership-team">Our Leadership Team</h3>
             <ul class="leadership-team-list mt-4">
@@ -78,19 +79,19 @@ function App() {
             </ul>
           </div>
         </section>
-        <section class="values text-center container-fluid p-5">
-          <h2 class="small-heading">Who we are</h2>
+        <section class="values text-center container-fluid p-5" >
           <h3>Our Core Values</h3>
             <ul>
-              <li><img src="https://theadultchair.com/careers-new/icons/integrity.svg" alt="Integrity"/><h4>Unyielding Integrity</h4></li>
-              <li><img src="https://theadultchair.com/careers-new/icons/candor.svg" alt="Integrity"/><h4>Radical Candor</h4></li>
-              <li><img src="https://theadultchair.com/careers-new/icons/authentic.svg" alt="Integrity"/><h4>Consistent Authenticity</h4></li>
-              <li><img src="https://theadultchair.com/careers-new/icons/people-first.svg" alt="Integrity"/><h4>Heart + People First</h4></li>
-              <li><img src="https://theadultchair.com/careers-new/icons/contribution.svg" alt="Integrity"/><h4>Passionate Contribution</h4></li>
-              <li><img src="https://theadultchair.com/careers-new/icons/intentional.svg" alt="Integrity"/><h4>Intentional Living</h4></li>
-              <li><img src="https://theadultchair.com/careers-new/icons/future-focused.svg" alt="Integrity"/><h4>Future Focused</h4></li>
-              <li><img src="https://theadultchair.com/careers-new/icons/2-mile-standard.svg" alt="Integrity"/><h4>Two-mile Standard of Excellence</h4></li>
-              <li><img src="https://theadultchair.com/careers-new/icons/growth.svg" alt="Integrity"/><h4>Continuous Growth</h4></li>
+              <li><img src="https://michellechalfant.com/careers/icons/integrity.svg" alt="Integrity"/><h4>Unyielding Integrity</h4>
+              <span>We tell the truth, do what’s right and honor our word, even when it’s expensive, inconvenient or embarrassing. Honesty and transparency guide our work.</span></li>
+              <li><img src="https://michellechalfant.com/careers/icons/candor.svg" alt="Integrity"/><h4>Radical Candor</h4><span>We bust stories, are honest with ourselves and say what we mean to each other. We do not blame, shame or gossip.</span></li>
+              <li><img src="https://michellechalfant.com/careers/icons/authentic.svg" alt="Integrity"/><h4>Consistent Authenticity</h4><span>We show up authentically, we say what we mean and we do this consistently – because we’re the same people at work, at home and by ourselves. We don’t put anything out we don’t believe in, and we want the highest good for all who interact with us. </span></li>
+              <li><img src="https://michellechalfant.com/careers/icons/people-first.svg" alt="Integrity"/><h4>Heart + People First</h4><span>We believe that all people deserve to be seen, heard and understood. We honor the worth of every individual and treat everyone with kindness and respect. </span></li>
+              <li><img src="https://michellechalfant.com/careers/icons/contribution.svg" alt="Integrity"/><h4>Passionate Contribution</h4><span>We see our work and the people we work with as a gift and demonstrate our gratitude by adding value to every person and situation we encounter. Everyone's ideas and gifts matter here.</span></li>
+              <li><img src="https://michellechalfant.com/careers/icons/intentional.svg" alt="Integrity"/><h4>Intentional Living</h4><span>We practice what we preach. We value well-being, self-care, work/life balance, healthy relationships and living in alignment with our true selves. We prioritize what matters most while striving for extraordinary results. </span></li>
+              <li><img src="https://michellechalfant.com/careers/icons/future-focused.svg" alt="Integrity"/><h4>Future Focused</h4><span>We take responsibility for delivering high-leverage outcomes in our individual performance and company goals, and we learn from both wins and misses. Everything we do is motivated by our mission, vision and the future we are here to achieve. </span></li>
+              <li><img src="https://michellechalfant.com/careers/icons/2-mile-standard.svg" alt="Integrity"/><h4>Two-mile Standard of Excellence</h4><span>We strive to be excellent in what we do and who we are. We create great products, we live consciously and we passionately serve each other and our community. Going the extra two miles is our standard.</span></li>
+              <li><img src="https://michellechalfant.com/careers/icons/growth.svg" alt="Integrity"/><h4>Continuous Growth</h4><span>We view personal and professional growth as a divine calling and individual responsibility. We constantly learn, constantly grow and constantly improve our products, operations and ourselves.</span></li>
             </ul>
           </section>
         <section class="reasons text-center container-fluid p-5">
@@ -132,7 +133,7 @@ function App() {
               <div class="status">
                 Posted
               </div>
-              <date>Feb 09</date>
+              <time>Feb 13</time>
             </div>
             <div class="content">
             <h3>Virtual Executive Assistant to CEO </h3>
@@ -154,12 +155,7 @@ function App() {
           <div class="content">
           <h2>Never miss a job post</h2>
           <h3>Sign up to be notified when new jobs are posted</h3>
-          <form action="/" method="post" >
-            <input type="text" name="name" placeholder="Name"></input>
-            <input type="email" name="email" placeholder="Email"></input>
-            <p>
-            <input id="terms-conditions" type="checkbox" value="agree" name="terms-conditions"></input><label for="terms-conditions">By clicking this button, you agree to <a href="https://theadultchair.com/terms-and-conditions/" target="_blank" rel="noreferrer">Terms and conditions</a>.</label> <button type="submit">Sign up</button></p>
-            </form> 
+          <SubForm />
             </div>
             </div>
         </section>
