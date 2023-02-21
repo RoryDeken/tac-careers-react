@@ -8,7 +8,7 @@ p,li,a, span, time, .status  {
   font-family: 'Roboto';
 }
 .tac-header {
-  background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://theadultchair.com/wp-content/uploads/2019/09/andrew-neel-ute2XAFQU2I-unsplash.jpg);
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://theadultchair.com/wp-content/uploads/2019/09/andrew-neel-ute2XAFQU2I-unsplash.jpg);
   background-size:cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -22,7 +22,11 @@ p,li,a, span, time, .status  {
     position: absolute;
     top: 0;
     .logo-wrapper {
+     
       img {
+        max-width:100%;
+        height: auto;
+        width: 350px;
       @media(max-width:980px){
         display: block;
         margin: auto;
@@ -32,72 +36,53 @@ p,li,a, span, time, .status  {
     .nav {
       display: flex;
       padding-top: 25px;
+      justify-content: flex-end;
+      @media(max-width:980px){
+        justify-content: center;
+      }
+      .row {
+        flex-basis: 100%;
+        justify-content: flex-end;
+        @media(max-width:980px){
+          justify-content: center;
+          flex-wrap: wrap;
+        }
       ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         position: relative;
+       
       
       li {
         list-style: none;
         display: inline-block;
-        display: none;
-        &.search {
-          cursor: pointer;
-          border: 1px solid #FFF;
-          border-radius: 4px;
-          top:8px;
-          padding:10px;
-          display: inline-block;
-          position: absolute;
-          right: 0;
+        border-right: 1px solid #FFF;
+        padding-right: 25px;
+        margin-right: 25px;
+
+        &:last-of-type{
+          border-right: none;
         }
           a {
             color:#FFF;
             text-decoration: none;
             text-transform: uppercase;
+            font-size: 18px;
+            font-family: 'CanelaDeck';
+            &:hover {
+              color:#846868;
+            }
           }
+  
         }
-        .form-overlay {
-          position:fixed;
-          top:0;
-          left:0;
-          height:100%;
-          width:100%;
-          background: rgba(0,0,0,0.8);
-          display:flex;
-          justify-content: center;
-          align-items: center;
-          button {
-            background: none;
-            border:none;
-            color:#FFF;
-            width: 15px;
-            transform: rotate(90deg);
-            position: relative;
-            right: -10px;
-          }
-          button.exit {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            font-size: 18x;
-            transform: rotate(0deg);
-          }
-          label {
-            font-size: 25px;
-          }
-          input, input:focus, input:focus-visible {
-              padding: 10px;
-              width: 500px;
-              background: none;
-              border: none;
-              border-bottom: 1px solid white;
-              color:#FFF;
-              font-size: 32px;
-              outline: none;
+        @media(max-width:480px){
+          flex-wrap: wrap;
+          li {
+            border-right: none;
           }
         }
       }
+    }
     }
   }
 
@@ -131,6 +116,9 @@ section {
       text-transform: uppercase;
     }
   &.what-we-do {
+    @media(max-width:980px){
+      padding: 1rem!important;
+    }
     h3 {
     color:#4D4A4A;
     @media(max-width:980px){
@@ -140,10 +128,11 @@ section {
     hr {
       border-top:1px solid #424242;
     }
+    
   }
   .methods {
     padding: 3rem 0;
-    @media(max-width:980px){
+    @media(max-width:480px){
       padding: 1rem 0;
     }
     ul {
@@ -185,6 +174,10 @@ section {
         justify-content: center;
         align-items: center;
         font-size: 14px;
+        @media(max-width:480px){
+            padding: 30px 60px;
+            font-size: 12px;
+        }
       }
       &:first-child {
         span {
@@ -268,6 +261,7 @@ section {
       @media(max-width:980px){
         padding:0!important;
         width: 100%;
+        font-size: 42px;
       }
 
     }
@@ -385,6 +379,7 @@ section {
       position: relative;
       @media(max-width:980px){
         width: 100%;
+        padding: 20px 10px;
       }
       margin: 15px auto;
 
@@ -402,6 +397,9 @@ section {
       }
       h3, p {
         padding-left: 90px;
+        @media(max-width:768px){
+          padding-left: 0;
+        }
       }
       &.reason:last-child {
         border-bottom: none;
@@ -418,6 +416,10 @@ section {
         padding-right: 30px;
         font-family: "CanelaDeck";
         font-weight: 900;
+        @media(max-width:768px){
+            border-right:none;
+            position: relative;
+        }
 
       }
       &:nth-child(3)::before {
@@ -441,6 +443,10 @@ section {
     h2 {
       font-size: 34px;
     }
+    @media(max-width:768px){
+      padding: 1rem!important;
+    }
+
 
     .position-wrapper {
       display:flex;
@@ -612,6 +618,9 @@ section {
     h2 {
       width: 75%;
       font-size: 34px;
+      @media(max-width:768px){
+        font-size:26px;
+      }
     }
   }
 
