@@ -11,10 +11,10 @@ export default function SubForm() {
                 <input type="hidden" name="_wpcf7_posted_data_hash" value=""/>
                 </div>
                 
-                <input type="text" name="fullname" placeholder="Name"/>
-                <input type="email" name="email" placeholder="Email"/>
+                <input type="text" name="fullname" placeholder="Name" required/>
+                <input type="email" name="email" placeholder="Email" required/>
                 <p>
-                <input id="terms-conditions" type="checkbox" value="agree" name="terms-conditions"/><label for="terms-conditions">By clicking this button you agree to receive emails from the Michelle Chalfant company.</label> 
+                <input id="terms-conditions" type="checkbox" value="agree" name="terms-conditions" required/><label for="terms-conditions">By clicking this button you agree to receive emails from the Michelle Chalfant company.</label> 
                 </p>
                 <p><button type="submit">Sign up</button></p>
             </form>  

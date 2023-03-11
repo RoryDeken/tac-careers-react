@@ -133,10 +133,10 @@ function App() {
               <div class="status">
                 Posted
               </div>
-              <time>Feb 13</time>
+              <time>Mar 9</time>
             </div>
             <div class="content">
-            <h3>Virtual Executive Assistant to CEO </h3>
+            <h3>Virtual Executive Assistant</h3> 
             <span><img alt="" src={Location} /> Nashville, TN / Remote</span>
             <div class="position">
             <Position />
